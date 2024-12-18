@@ -61,3 +61,20 @@ ALL You need to know command is the following command.
 ```bash
 du -ah -d 1 | sort -rh
 ```
+
+```
+61M	./target
+61M	.
+404K	./.git
+12K	./src
+12K	./Cargo.lock
+4.0K	./README.md
+4.0K	./.gitignore
+4.0K	./Cargo.toml
+```
+
+# Question
+
+- Why the result of `du -ah -d 1 | sort -rh` is different from the result of `durust`?
+  - Because `du` command calculates the size of the file by blocks, not by bytes. Otherwize, `durust` calculates the size of the file by bytes.
+
