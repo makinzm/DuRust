@@ -53,3 +53,11 @@ Current directory: ./target/release
 Select a directory to explore or enter `:q` to quit:
 Exiting...
 ```
+
+# Comment
+
+ALL You need to know command is the following command.
+
+```bash
+du -ah -d 1 | sort -rh
+```
